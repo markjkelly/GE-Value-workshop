@@ -5,18 +5,19 @@
 <ul>
   <li><a href="#section-1">Welcome & Prerequisites</a></li>
   <li><a href="#section-2">1: Navigating the Interface & Basic Assistant Features</a></li>
-  <li><a href="#section-4">2: Configuring Personalization and Appearance</a></li>
-  <li><a href="#section-3">3: Web Search, File Analysis & Data Handling</a></li>
-  <li><a href="#section-5">4: Searching Internal Company Data</a></li>
-  <li><a href="#section-8">5: Generating Media (Images and Video)</a></li>
-  <li><a href="#section-canvas">6: Using the Canvas Feature</a></li>
-  <li><a href="#section-skills">7: Using and Creating Skills</a></li>
-  <li><a href="#section-9">8: Conducting Deep Research</a></li>
-  <li><a href="#section-10">9: Unlocking Insights with Gemini Notebook</a></li>
-  <li><a href="#section-11">10: Build a Chat Agent from a Prompt with Agent Designer</a></li>
-  <li><a href="#section-12">11: Build a Chat Agent with the Agent Designer Builder (Manually)</a></li>
-  <li><a href="#section-13">12: Build a Workflow Agent</a></li>
-  <li><a href="#section-14">13: Gemini Notebook Challenge Labs</a></li>
+  <li><a href="#section-prompting">2: The ABCDQs of Prompting</a></li>
+  <li><a href="#section-4">3: Configuring Personalization and Appearance</a></li>
+  <li><a href="#section-3">4: Web Search, File Analysis & Data Handling</a></li>
+  <li><a href="#section-5">5: Searching Internal Company Data</a></li>
+  <li><a href="#section-8">6: Generating Media (Images and Video)</a></li>
+  <li><a href="#section-canvas">7: Using the Canvas Feature</a></li>
+  <li><a href="#section-skills">8: Using and Creating Skills</a></li>
+  <li><a href="#section-9">9: Conducting Deep Research</a></li>
+  <li><a href="#section-10">10: Unlocking Insights with Gemini Notebook</a></li>
+  <li><a href="#section-11">11: Build a Chat Agent from a Prompt with Agent Designer</a></li>
+  <li><a href="#section-12">12: Build a Chat Agent with the Agent Designer Builder (Manually)</a></li>
+  <li><a href="#section-13">13: Build a Workflow Agent</a></li>
+  <li><a href="#section-14">14: Gemini Notebook Challenge Labs</a></li>
 </ul>
 </div>
 <br><br>
@@ -127,9 +128,61 @@ Let's start by getting familiar with the Gemini Enterprise interface and some of
 
 ---
 
+<div id='section-prompting'></div>
+
+# Task 2: The ABCDQs of Prompting
+
+Your first prompt, or **seed prompt**, sets the stage for each chat session. It should frame the core task and provide the necessary context that Gemini Enterprise needs for subsequent questions. For the most consistent and predictable results, your seed prompt should have a structured format.
+
+This can be represented as the **ABCDQs of prompting**! These top prompting tips have been verified as tested by AI-savvy Googlers and consist of **Act**, **Blueprint**, **Context**, **Deeply**, and **Question**. Check them out below!
+
+<br>
+
+![The ABCDQs of Prompting](./jumpstart_images/image-73_bordered.png)
+
+<br><br>
+
+### The ABCDQ Framework Breakdown:
+
+* **Act (Persona & Role):** It’s a good idea to define Gemini Enterprise’s persona (e.g., *"You are a Principal TPM preparing for a VP review"*). This narrows the scope and enables Gemini Enterprise to adopt the correct vocabulary and perspective. Give Gemini Enterprise detailed instructions on what you want it to do. It’s helpful to use strong action verbs (e.g., *"Synthesize," "Extract," "Draft," "Compare"*).
+* **Blueprint (Output Format):** Instruct Gemini Enterprise on how to present the final information. Be specific (e.g., *"Format as a Markdown table," "Create a spreadsheet," "Output as a bulleted list"*). It can help to tell Gemini Enterprise what it should not do, as well as the rules it should follow. Examples include limiting word count, specifying tone, or excluding specific details (e.g., *"Strictly limit to 500 words. Do not include granular API schemas."*).
+* **Context:** Provide the required information for the task. This might include documentation or notes, or instructions to check your email or calendar. Giving Gemini Enterprise access to documents unlocks the ability to synthesize, modify, or extract information from them. With Gemini Enterprise, you have the ability to upload files from your computer or add them from Drive.
+* **Deeply:** It can be surprisingly helpful to ask Gemini Enterprise to think deeply about the question. Doing so can trigger the reasoning steps behind the AI tool and provide a more well-reasoned response to your prompt.
+* **Question:** Prompting Gemini Enterprise to ask what you might be missing can be a great way to ensure that it has all the information it needs to craft an accurate response.
+
+Starting your session with a well-formulated seed prompt increases the likelihood of effective and actionable responses from any AI tool.
+
+<br>
+
+### Practice: Try the ABCDQ Framework
+
+Test the ABCDQ framework by submitting the following two structured seed prompts in Gemini Enterprise:
+
+#### Prompt 1: Strategic Planning Review
+1. Start a **New Chat**.
+2. In the Omnibar:
+   * **Type**: `Act as a senior enterprise strategy consultant. Blueprint: Provide a structured Markdown table comparing 3 AI adoption strategies (Build vs. Buy vs. Partner) across Cost, Time to Market, Risk, and Scalability, followed by a concise 3-bullet executive recommendation. Context: We are a Fortune 500 healthcare provider modernizing patient engagement workflows. Deeply: Think deeply through clinical compliance and data privacy trade-offs. Question: Ask me 2 clarifying questions that would help you tailor this strategy even further.`
+   * **Submit** the query.
+3. Review the structured output, noting how Gemini adopts the persona, adheres to the Blueprint format, reasons through the Context, and concludes with clarifying questions.
+
+<br><br>
+
+#### Prompt 2: Project Management & Risk Mitigation
+1. Start a **New Chat**.
+2. In the Omnibar:
+   * **Type**: `Act as an expert technical project manager. Blueprint: Draft a risk mitigation matrix with columns for Risk Description, Impact (High/Med/Low), Probability (High/Med/Low), and Mitigation Action. Context: Our team is migrating an on-premises Oracle database to BigQuery with a go-live deadline in 6 weeks. Deeply: Think deeply about data cutover windows, zero-downtime requirements, and rollback strategies. Question: Ask what additional constraints or details you need to optimize this cutover plan.`
+   * **Submit** the query.
+3. Observe how structuring your seed prompt produces an immediate, high-fidelity deliverable with clear follow-up opportunities.
+
+<br><br>
+
+<div class="nav-link"><a href="#top">↑ Back to Top</a></div>
+
+---
+
 <div id='section-4'></div>
 
-# Task 2: Configuring Personalization and Appearance
+# Task 3: Configuring Personalization and Appearance
 
 **Appearance**: You can customize the appearance of Gemini Enterprise in a variety of ways, including adjusting the theme (System, Light, Dark) and chat density (Comfortable, Compact).
 
@@ -184,7 +237,7 @@ Let's start by getting familiar with the Gemini Enterprise interface and some of
 
 <div id='section-3'></div>
 
-# Task 3: Web Search, File Analysis & Data Handling
+# Task 4: Web Search, File Analysis & Data Handling
 
 Gemini Enterprise can analyze public web data, process files, and format data for external use.
 
@@ -284,7 +337,7 @@ Gemini Enterprise can analyze public web data, process files, and format data fo
 
 <div id='section-5'></div>
 
-# Task 4: Searching Internal Company Data
+# Task 5: Searching Internal Company Data
 
 Gemini Enterprise allows you to securely query your connected enterprise data and extract insights from text and visuals. It can connect to Google 1st party solutions like Google Cloud Storage, BigQuery, Google Drive, and Google Calendar, but also 3rd party systems via numerous connectors available to Outlook, SharePoint, Jira, ServiceNow and many others. For more details on connectors, see https://docs.cloud.google.com/gemini/enterprise/docs/connectors/introduction-to-connectors-and-data-stores
 
@@ -328,7 +381,7 @@ Gemini Enterprise allows you to securely query your connected enterprise data an
 
 <div id='section-8'></div>
 
-# Task 5: Generating Media (Images and Video)
+# Task 6: Generating Media (Images and Video)
 
 Gemini Enterprise allows you to generate images and videos using Google’s state-of-the-art models.
 
@@ -408,7 +461,7 @@ Gemini Enterprise allows you to generate images and videos using Google’s stat
 
 <div id='section-canvas'></div>
 
-# Task 6: Using the Canvas Feature
+# Task 7: Using the Canvas Feature
 
 ### What is Canvas?
 **Canvas** is an interactive, side-by-side editing interface within Gemini Enterprise designed for collaborating with AI on long-form content, presentations, code, and structured documents. Instead of managing back-and-forth messages in a single linear chat stream, Canvas opens a dedicated editor panel directly alongside your conversation where Gemini generates, refines, and formats full artifacts in real time.
@@ -514,7 +567,7 @@ Canvas makes drafting and refining structured business documents collaborative a
 
 <div id='section-skills'></div>
 
-# Task 7: Using and Creating Skills
+# Task 8: Using and Creating Skills
 
 Skills are modular, specialized capabilities that expand Gemini Enterprise's functionality to automate routine tasks, enforce brand and communication guidelines, and execute structured workflows. Gemini Enterprise allows you to discover and install pre-built skills as well as build your own custom skills.
 
@@ -736,7 +789,7 @@ In this exercise, you will create a custom skill that extracts company names fro
 
 <div id='section-9'></div>
 
-# Task 8: Conducting Deep Research
+# Task 9: Conducting Deep Research
 
 The **Deep Research** agent performs extensive, multi-step web research to synthesize detailed reports. It gathers cited sources, explores complex topics thoroughly, and provides comprehensive overviews to accelerate your understanding of new subjects.
 
@@ -813,7 +866,7 @@ You can also seamlessly call the Deep Research agent directly from your current 
 
 <div id='section-10'></div>
 
-# Task 9: Unlocking Insights with Gemini Notebook
+# Task 10: Unlocking Insights with Gemini Notebook
 
 Embedded directly within Gemini Enterprise, **Gemini Notebook** serves as a specialized AI research and writing assistant designed to bridge the gap between vast data silos and actionable insights. Unlike general-purpose AI, it operates as a **"grounded" collaborator**, meaning its intelligence is strictly anchored to the specific documents you provide rather than general internet data.
 
@@ -965,7 +1018,7 @@ Essentially, Gemini Notebook is built for the "heavy lifting" phase of a project
 
 <div id='section-11'></div>
 
-# Task 10: Build a Chat Agent from a Prompt with Agent Designer
+# Task 11: Build a Chat Agent from a Prompt with Agent Designer
 
 With Agent Designer enabled, you can rapidly build custom agents starting with just a simple text prompt.
 
@@ -1051,7 +1104,7 @@ You'll see a result in the agent draft's Preview tab.
 
 <div id='section-12'></div>
  
-# Task 11: Build a Chat Agent with the Agent Designer Builder (Manually)
+# Task 12: Build a Chat Agent with the Agent Designer Builder (Manually)
  
 Take more control of the agent-building process by using the manual Builder interface and adding multi-step subagents.
  
@@ -1134,7 +1187,7 @@ Take more control of the agent-building process by using the manual Builder inte
  
 <div id='section-13'></div>
   
-# Task 12: Build a Workflow Agent
+# Task 13: Build a Workflow Agent
  
 Workflow Agents automate scheduled or event-driven tasks across your enterprise tools. While Chat Agents focus on interactive conversations, Workflow Agents run background processes (such as automated market briefings or status reports), orchestrate triggers and actions, and deliver structured results directly on a recurring schedule.
  
@@ -1254,7 +1307,7 @@ Workflow Agents automate scheduled or event-driven tasks across your enterprise 
  
 <div id='section-14'></div>
  
-# Task 13: Gemini Notebook Challenge Labs
+# Task 14: Gemini Notebook Challenge Labs
 
 Welcome to the Gemini Notebook Challenge Labs! These exercises are designed to test your ability to synthesize information, extract insights, and generate multi-modal outputs using Gemini Notebook. 
 
@@ -1331,6 +1384,7 @@ You have completed the **Gemini Enterprise Hands-on Lab**.
 
 **What you accomplished today:**
 - **Familiarized** yourself with the basic Assistant features.
+- **Mastered the ABCDQs of Prompting** to construct structured, high-impact seed prompts.
 - **Configured** Personalization and Appearance to match your work style.
 - **Leveraged** Search and File Analysis to interact with web and internal data.
 - **Generated Media** (Images and Veo Videos) directly within chat.
