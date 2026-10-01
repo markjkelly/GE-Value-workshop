@@ -1,7 +1,8 @@
-# Gemini Enterprise Workshop Setup Guide
+# GE Workshop Setup: CLI & Terraform Path
 
-> **Audience**: Platform engineers deploying Gemini Enterprise for the first time and setting up the [GE Value Workshop](https://github.com/caugusto/GE-Value-workshop).
-> **Time estimate**: ~45 minutes infrastructure setup + ~15 minutes validation.
+> **Companion to**: [`setup_ge.md`](setup_ge.md) — which covers the same steps via the GCP Console UI.
+> **Audience**: Engineers who prefer automating environment prep via `gcloud` CLI or Terraform rather than clicking through the console.
+> **Time estimate**: ~15 minutes (gcloud path) · ~45 minutes (Terraform path) + ~15 minutes validation.
 > **Last updated**: 2026-10-01
 
 ---
@@ -36,7 +37,9 @@
 
 ## 1. Overview
 
-**Gemini Enterprise** is Google's enterprise AI assistant with secure access to internal company data via Discovery Engine datastores. This guide covers:
+[`setup_ge.md`](setup_ge.md) covers workshop environment setup through the GCP Console UI. This guide covers the same steps **via `gcloud` CLI or Terraform**, which is faster, repeatable, and scriptable — particularly useful for facilitators spinning up multiple workshop environments or running on a tight timeline.
+
+This guide covers:
 
 - Provisioning the GCP project, enabling required APIs, and granting IAM roles via the Terraform foundation.
 - Creating a GCS bucket and loading the workshop sample dataset.
